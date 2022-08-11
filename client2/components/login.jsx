@@ -1,6 +1,7 @@
 import { LockClosedIcon } from '@heroicons/react/solid'
 import { useEffect, useState } from "react";
 import api from '../env'
+import Head from 'next/head'
 
 export default function login() {
   const [form, setForm] = useState({
@@ -41,6 +42,9 @@ export default function login() {
 
   return (
     <div>
+      <Head>
+        <title>Login - Steven</title>
+      </Head>
       
       <div className="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
